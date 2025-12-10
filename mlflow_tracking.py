@@ -146,7 +146,7 @@ def main(args):
         system_info = collect_system_info()
         mlflow.log_dict(system_info, "system_info.json")
         mlflow.log_param("script", Path(__file__).name)
-        mlflow.log_param("model_source", args.model_source)
+        mlflow.log_param("model_size", "Extra Large (X)")
         mlflow.log_param("evaluate_on_val", str(args.evaluate))
 
         # load model
@@ -194,7 +194,7 @@ def main(args):
                 mlflow.log_param("evaluation_error", str(e))
                 mlflow.log_artifact(run_artifact_dir / "evaluation_failed.txt")
 
-        logged = try_log_torch_model_to_mlflow(model, model_name="yolov8n")
+        logged = try_log_torch_model_to_mlflow(model, model_name="yolov8x_baseline")
         mlflow.log_param("model_logged", str(logged).lower())
 
         report = {
@@ -230,8 +230,8 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="MLflow tracking for YOLOv8 demo")
     parser.add_argument("--experiment_name", type=str, default=DEFAULT_EXPERIMENT)
-    parser.add_argument("--run_name", type=str, default="yolov8_pretrained_demo")
-    parser.add_argument("--model_source", type=str, default="yolov8n.pt")
+    parser.add_argument("--run_name", type=str, default="yolov8x_baseline_demo")
+    parser.add_argument("--model_source", type=str, default="yolov8x.pt")
     parser.add_argument("--sample_images", nargs="*", default=[
         r"C:\Users\ezath\OneDrive\Desktop\Blind_project\chair.jpg",
         r"C:\Users\ezath\OneDrive\Desktop\Blind_project\door.jpg"

@@ -25238,5 +25238,1573 @@
     "confidence": 1.0,
     "correct": null,
     "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:11.467802Z",
+    "model": "object_detection",
+    "label": "tv",
+    "confidence": 0.2930764853954315,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:19.437920Z",
+    "model": "object_detection",
+    "label": "book",
+    "confidence": 0.4306415617465973,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:19.723264Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.35167089104652405,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:19.982460Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.3512245714664459,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:24.362737Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.938496470451355,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:28.260623Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.9466001987457275,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:28.547667Z",
+    "model": "object_detection",
+    "label": "book",
+    "confidence": 0.26282164454460144,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:32.104293Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.2513895630836487,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:35.806425Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:40.396280Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:45.393056Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:50.308595Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:34:55.677479Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:00.526502Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:05.239425Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:09.518761Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:14.343456Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:24.236351Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:28.139406Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:34.034049Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:37.500311Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:42.610540Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:48.433979Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:35:54.450721Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:00.664597Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:04.013038Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:07.670023Z",
+    "model": "object_detection",
+    "label": "book",
+    "confidence": 0.519754946231842,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:15.782056Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:21.172759Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:26.060628Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:32.012986Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:38.212230Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:40.520109Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:49.268247Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:36:54.366620Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:37:00.602293Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:37:17.876594Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:37:20.214662Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:37:32.333686Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:15.594528Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.9511944055557251,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:15.884381Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.6593495607376099,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:16.181012Z",
+    "model": "object_detection",
+    "label": "dining table",
+    "confidence": 0.33313944935798645,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:31.030652Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.8143593072891235,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:31.308228Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.7799902558326721,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:31.551978Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.6337137222290039,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:31.850601Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.5791678428649902,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:32.113609Z",
+    "model": "object_detection",
+    "label": "dining table",
+    "confidence": 0.4988061785697937,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:36.054414Z",
+    "model": "object_detection",
+    "label": "person",
+    "confidence": 0.5011045336723328,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:42.542133Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:42:48.382567Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:43:14.410811Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:43:35.537498Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:43:43.819850Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:43:59.699936Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:44:06.810080Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:44:12.925871Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:44:25.425651Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:44:31.547299Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:45:13.704412Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:45:20.844219Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:45:28.882950Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:45:52.374227Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:47:11.508632Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:47:17.675601Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:47:24.797662Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:47:38.424855Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:47:43.574870Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:47:49.176597Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:47:56.869543Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:48:04.051922Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:48:13.520623Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:48:41.180929Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:48:48.945828Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:48:54.546731Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:49:01.418131Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:49:13.747066Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:49:36.575680Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:49:41.607110Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:49:45.509250Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:49:53.182815Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.4195902943611145,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:04.675258Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.4195902943611145,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:10.018231Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.5157380700111389,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:14.268339Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.7475546002388,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:14.578639Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.538844645023346,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:14.889511Z",
+    "model": "object_detection",
+    "label": "person",
+    "confidence": 0.4737744629383087,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:19.233846Z",
+    "model": "object_detection",
+    "label": "keyboard",
+    "confidence": 0.6683974266052246,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:19.522221Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.3866989314556122,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:23.997030Z",
+    "model": "object_detection",
+    "label": "tv",
+    "confidence": 0.2515799105167389,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:31.818510Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:38.871064Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:45.178665Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:50:52.778746Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:58:17.248748Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:58:22.282867Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:58:27.700760Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:58:32.418942Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:58:38.277212Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.3729100823402405,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:58:41.234326Z",
+    "model": "object_detection",
+    "label": "person",
+    "confidence": 0.2882024645805359,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:58:45.927688Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:58:50.075976Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:58:54.554942Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:58:59.624738Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:04.611000Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:08.774054Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:14.357773Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:19.227017Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:25.029709Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:30.573348Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:36.652156Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:42.121840Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:46.321435Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:51.484379Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:54.897267Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.34387603402137756,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:55.086031Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.2986336648464203,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:55.390163Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.2616301476955414,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:59.605445Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.6666527986526489,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:59:59.786721Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.3253747224807739,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:00:05.193769Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.9366396069526672,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:00:05.401477Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.8356878757476807,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:00:05.535047Z",
+    "model": "object_detection",
+    "label": "handbag",
+    "confidence": 0.5930635929107666,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:00:11.276633Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:00:16.219787Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:00:21.110946Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:00:25.651490Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:00:30.315868Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:00:35.421118Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:00:39.776602Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:02:14.050635Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:02:17.136856Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:02:20.329566Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:02:23.485382Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:02:26.795242Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:02:30.175867Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:02:42.689048Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:02:50.061763Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:02:57.456852Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:03:05.528673Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:03:18.744284Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:03:22.656391Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:03:26.625125Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:03:31.265580Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:03:40.386541Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:03:49.102341Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:03:57.778429Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:04:11.397764Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:04:20.098255Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:04:30.326661Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:04:37.241860Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.277618408203125,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:04:37.536036Z",
+    "model": "object_detection",
+    "label": "keyboard",
+    "confidence": 0.2557167112827301,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:04:44.572394Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.8261412978172302,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:04:48.003209Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.5999428033828735,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:04:48.312145Z",
+    "model": "object_detection",
+    "label": "keyboard",
+    "confidence": 0.5062034726142883,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:04:54.228066Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:05:00.104303Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:05:06.096854Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:05:11.507797Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:05:16.924304Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:05:25.361642Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:05:30.101890Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:05:35.369705Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:05:40.554270Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:05:45.008985Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:05:50.019474Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:01.399345Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.807407021522522,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:01.592384Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.6949114203453064,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:01.736435Z",
+    "model": "object_detection",
+    "label": "cup",
+    "confidence": 0.6437152028083801,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:01.906235Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.4884643256664276,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:02.057972Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.284675657749176,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:02.242237Z",
+    "model": "object_detection",
+    "label": "keyboard",
+    "confidence": 0.2539183497428894,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:06.014777Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.8452457785606384,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:06.201564Z",
+    "model": "object_detection",
+    "label": "cup",
+    "confidence": 0.8304095268249512,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:06.339082Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.7116281986236572,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:06.548851Z",
+    "model": "object_detection",
+    "label": "bottle",
+    "confidence": 0.6985964775085449,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:06.711025Z",
+    "model": "object_detection",
+    "label": "bed",
+    "confidence": 0.6078648567199707,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:06.931813Z",
+    "model": "object_detection",
+    "label": "cup",
+    "confidence": 0.3861740529537201,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:10.538461Z",
+    "model": "object_detection",
+    "label": "sports ball",
+    "confidence": 0.8090959191322327,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:21.361578Z",
+    "model": "object_detection",
+    "label": "keyboard",
+    "confidence": 0.6808388233184814,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:21.567463Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.4966179430484772,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:06:21.766247Z",
+    "model": "object_detection",
+    "label": "tv",
+    "confidence": 0.3143291771411896,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:24.603699Z",
+    "model": "object_detection",
+    "label": "keyboard",
+    "confidence": 0.8129501342773438,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:27.673682Z",
+    "model": "object_detection",
+    "label": "keyboard",
+    "confidence": 0.8564278483390808,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:31.134653Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.9711615443229675,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:33.871463Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.9774378538131714,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:37.277554Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.9738446474075317,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:37.439234Z",
+    "model": "object_detection",
+    "label": "chair",
+    "confidence": 0.25202676653862,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:40.181603Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.4185996353626251,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:42.810026Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.6221458911895752,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:42.965700Z",
+    "model": "object_detection",
+    "label": "keyboard",
+    "confidence": 0.2894483208656311,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:47.725879Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:15:59.549315Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:16:03.873697Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:16:17.402759Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:16:21.414660Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:16:25.049796Z",
+    "model": "ocr",
+    "label": "read_text",
+    "confidence": 1.0,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:16:39.352840Z",
+    "model": "object_detection",
+    "label": "keyboard",
+    "confidence": 0.7088095545768738,
+    "correct": null,
+    "additional": {}
+  },
+  {
+    "timestamp": "2025-12-10T19:16:39.507901Z",
+    "model": "object_detection",
+    "label": "laptop",
+    "confidence": 0.36941424012184143,
+    "correct": null,
+    "additional": {}
   }
 ]
