@@ -1,0 +1,46 @@
+log_file: "../logs/metrics.json"
+
+alert_threshold:
+  accuracy_drop: 0.75
+  confidence_drop: 0.6
+  error_rate: 0.2
+
+retrain:
+  check_interval_minutes: 30
+  min_records_for_retrain: 50
+  output_dir: "../models/retrained"
+  retrain_script: "../scripts/retrain_model.py"
+  auto_replace_model: true
+
+dashboard:
+  port: 8501
+  title: "AI Vision Assistant - Model Monitoring"
+  refresh_interval: 10
+
+mlflow:
+  tracking_uri: "http://127.0.0.1:5000"
+  experiment_name: "AI_Visions_Monitoring"
+  enable_tracking: true
+
+notifications:
+  email:
+    enabled: false
+    recipients:
+      - "team@aivisionassistant.com"
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    sender_email: "noreply@aivisionassistant.com"
+    sender_password: "your_password_here"
+  slack:
+    enabled: false
+    webhook_url: "https://hooks.slack.com/services/XXXX/YYYY/ZZZZ"
+
+logging:
+  level: "INFO"
+  file: "../logs/system.log"
+  format: "[%(asctime)s] [%(levelname)s] %(message)s"
+
+features:
+  enable_feedback_collection: true
+  enable_auto_clean_logs: true
+  enable_metric_summary_export: true

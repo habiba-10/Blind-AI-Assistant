@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Third Eye</title>
+    <link rel="icon" href="/static/favicon.ico" />
+    <style>
+       
+        :root { --primary: #00d2ff; --bg: #000000; --surface: #121212; --text: #ffffff; }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { margin: 0; padding: 0; background-color: var(--bg); color: var(--text); font-family: 'Segoe UI', Roboto, sans-serif; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+        .header { padding: 15px; text-align: center; background: rgba(18, 18, 18, 0.95); z-index: 10; border-bottom: 1px solid #333; }
+        .logo { font-size: 1.4rem; font-weight: 800; letter-spacing: 1px; }
+        .status { font-size: 1rem; color: var(--primary); margin-top: 5px; min-height: 24px; }
+        .camera-container { flex: 1; position: relative; background: #000; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        video, canvas { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+        .feedback-overlay { position: absolute; bottom: 30px; left: 20px; right: 20px; background: rgba(0, 0, 0, 0.8); padding: 20px; border-radius: 16px; border-left: 5px solid var(--primary); color: white; font-size: 1.2rem; font-weight: bold; text-align: center; display: none; z-index: 5; }
+        .controls-area { height: 340px; background: var(--surface); display: flex; align-items: center; justify-content: center; position: relative; border-top: 1px solid #333; }
+        .controller-circle { width: 280px; height: 280px; background: radial-gradient(circle, #2a2a2a 0%, #1a1a1a 100%); border-radius: 50%; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 4px solid #333; }
+        .btn { position: absolute; background: #333; color: white; border: 2px solid #555; border-radius: 35px; padding: 12px 20px; font-size: 1rem; font-weight: bold; cursor: pointer; min-width: 100px; display: flex; align-items: center; justify-content: center; gap: 8px; transition: 0.1s; }
+        .btn:active { transform: scale(0.92); background: var(--primary); color: #000; }
+        .btn.active-mode { background: var(--primary); color: #000; box-shadow: 0 0 15px rgba(0, 210, 255, 0.4); }
+        .btn-top { top: 20px; left: 50%; transform: translateX(-50%); }
+        .btn-bottom { bottom: 20px; left: 50%; transform: translateX(-50%); }
+        .btn-left { left: -45px; top: 50%; transform: translateY(-50%); } 
+        .btn-right { right: -45px; top: 50%; transform: translateY(-50%); } 
+        .btn-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(145deg, #333, #222); border: 3px solid var(--primary); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 2rem; z-index: 20; }
+        .btn-center:active { background: var(--primary); color: #000; }
+        #startOverlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 100; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .big-btn { padding: 25px 50px; font-size: 1.8rem; background: var(--primary); color: #000; border: none; border-radius: 60px; font-weight: 900; cursor: pointer; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(0, 210, 255, 0); } 100% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0); } }
+    </style>
+</head>
+<body>
+
+    <div id="startOverlay">
+        <div style="margin-bottom: 30px; font-size: 4rem;">👁</div>
+        <button class="big-btn" id="initBtn">TAP TO START</button>
+        <p style="color: #888; margin-top: 20px; font-size: 1.1rem;">Click once to enable Voice Control</p>
+    </div>
+
+    <div class="header">
+        <div class="logo">Third Eye</div>
+        <div class="status" id="statusText">System Ready</div>
+    </div>
+
+    <div class="camera-container">
+        <video id="video" autoplay playsinline muted></video>
+        <canvas id="overlay"></canvas>
+        <div class="feedback-overlay" id="feedbackBox">Initializing...</div>
+    </div>
+
+    <div class="controls-area">
+        <div class="controller-circle">
+            <button class="btn btn-top" id="btnOCR">📖 READ</button>
+            <button class="btn btn-bottom active-mode" id="btnObj">👁 LOOK</button>
+            <button class="btn btn-left" id="btnStart">▶ START</button>
+            <button class="btn btn-right" id="btnStop" style="border-color: #ff4444; color:#ff4444;">🛑 STOP</button>
+            <button class="btn btn-center" id="btnMic">🎤</button>
+        </div>
+    </div>
+
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('overlay');
+        const ctx = canvas.getContext('2d');
+        const statusText = document.getElementById('statusText');
+        const feedbackBox = document.getElementById('feedbackBox');
+        const startOverlay = document.getElementById('startOverlay');
+        const initBtn = document.getElementById('initBtn');
+        
+        const btnOCR = document.getElementById('btnOCR');
+        const btnObj = document.getElementById('btnObj');
+        const btnStart = document.getElementById('btnStart');
+        const btnStop = document.getElementById('btnStop');
+        const btnMic = document.getElementById('btnMic');
+
+        let streaming = false;
+        let isProcessing = false;
+        let currentMode = 'object'; 
+        let loopHandle = null;
+        let synth = window.speechSynthesis;
+        let recognition = null;
+        let micEnabled = false; 
+
+        
+        let lastSceneState = ""; 
+        let lastSpokenTime = 0;
+
+       
+        function speak(text, force = false) {
+            if(!text) return;
+            const now = Date.now();
+
+         
+
+            if (!force) {
+                if (text === lastSceneState && (now - lastSpokenTime) < 10000) {
+                    return; 
+                }
+            }
+
+           
+            synth.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = 'en-US';
+            u.rate = 1.0; 
+            const v = synth.getVoices().find(vo => /female|google us english|samantha/i.test(vo.name)) || synth.getVoices()[0];
+            if(v) u.voice = v;
+            
+            synth.speak(u);
+            
+            
+            lastSceneState = text;
+            lastSpokenTime = now;
+        }
+
+        // --- 2. Frame Processing ---
+        async function sendFrame(blob){
+            const fd = new FormData();
+            fd.append('file', blob, 'frame.jpg');
+            const controller = new AbortController();
+            const id = setTimeout(() => controller.abort(), 4000);
+            try {
+                const res = await fetch(`/predict?mode=${currentMode}`, { method: 'POST', body: fd, signal: controller.signal });
+                clearTimeout(id);
+                if(!res.ok) throw new Error('Err');
+                return await res.json();
+            } catch(e) { return { result: [] }; }
+        }
+
+        function updateUI(data){
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            
+            if(currentMode === 'ocr') {
+                const text = data.result?.text || "";
+                if(text.length > 2){
+                    feedbackBox.style.display = 'block';
+                    feedbackBox.innerText = text;
+                    speak(text);
+                } else {
+                    feedbackBox.style.display = 'none';
+                    lastSceneState = ""; 
+                }
+            } else {
+                // Object Mode
+                const boxes = Array.isArray(data.result) ? data.result : [];
+                const valid = boxes.filter(b => b.confidence >= 0.35);
+                
+                if(valid.length > 0) {
+                    feedbackBox.style.display = 'block';
+                    let speechParts = [];
+                    valid.forEach(box => {
+                        const [x1,y1,x2,y2] = box.bbox;
+                        ctx.strokeStyle = '#00d2ff';
+                        ctx.lineWidth = 3;
+                        ctx.strokeRect(x1,y1,x2-x1,y2-y1);
+                        
+                        const centerX = (x1 + x2) / 2;
+                        const width = canvas.width;
+                        let position = "ahead";
+                        if (centerX < width / 3) position = "on left";
+                        else if (centerX > (width * 2) / 3) position = "on right";
+                        
+                        speechParts.push(`${box.label} ${position}`);
+                    });
+                    
+                    
+                    const uniqueSpeech = [...new Set(speechParts)];
+                    const sentence = uniqueSpeech.join(', and ');
+                    
+                    feedbackBox.innerText = sentence;
+                    
+                  
+                    speak(sentence); 
+                } else {
+                    feedbackBox.style.display = 'none';
+                    lastSceneState = "";
+                }
+            }
+        }
+
+        async function loop(){
+            if(!streaming) return;
+            if(isProcessing) { loopHandle = setTimeout(loop, 100); return; }
+            isProcessing = true;
+            try {
+                const off = document.createElement('canvas');
+                off.width = video.videoWidth; off.height = video.videoHeight;
+                off.getContext('2d').drawImage(video, 0, 0);
+                const blob = await new Promise(r => off.toBlob(r, 'image/jpeg', 0.5));
+                statusText.innerText = currentMode === 'ocr' ? 'Reading Text...' : 'Detecting...';
+                const data = await sendFrame(blob);
+                updateUI(data);
+            } catch(e) { console.error(e); }
+            isProcessing = false;
+            const delay = currentMode === 'ocr' ? 1500 : 600;
+            if(streaming) loopHandle = setTimeout(loop, delay);
+        }
+
+        function resizeOverlay(){
+            if(!video.videoWidth) return;
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+        }
+        video.addEventListener('loadedmetadata', resizeOverlay);
+
+        // --- 3. Voice Commands ---
+        const Speech = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if(Speech) {
+            recognition = new Speech();
+            recognition.lang = 'en-US';
+            recognition.continuous = true;
+            recognition.interimResults = false; 
+            
+            recognition.onresult = (event) => {
+                const last = event.results.length - 1;
+                const cmd = event.results[last][0].transcript.toLowerCase().trim();
+                statusText.innerText =` Mic: "${cmd}"`;
+                
+                if(cmd.includes('read') || cmd.includes('text')) switchMode('ocr');
+                if(cmd.includes('object') || cmd.includes('look')) switchMode('object');
+                if(cmd.includes('stop')) stopSystem();
+                if(cmd.includes('start') || cmd.includes('begin')) startSystem();
+            };
+            
+            recognition.onend = () => { 
+                if(micEnabled) { try{ recognition.start(); }catch(e){} }
+            };
+            
+            recognition.onerror = (e) => {
+                if(micEnabled) setTimeout(()=> { try{recognition.start();}catch(e){} }, 1000);
+            };
+        }
+
+        // --- 4. Controls ---
+        function switchMode(mode) {
+            currentMode = mode;
+            btnOCR.classList.toggle('active-mode', mode === 'ocr');
+            btnObj.classList.toggle('active-mode', mode === 'object');
+            
+            
+            lastSceneState = ""; 
+            speak(mode === 'ocr' ? 'Reading Mode' : 'Object Mode', true);
+            statusText.innerText = mode.toUpperCase() + " MODE";
+        }
+
+        async function startSystem() {
+            micEnabled = true; 
+            if(streaming) return; 
+            try {
+                speak("Starting System", true);
+                const s = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' }, audio: false });
+                video.srcObject = s;
+                await video.play();
+                streaming = true;
+                startOverlay.style.display = 'none';
+                resizeOverlay();
+                if(recognition) try{ recognition.start(); }catch(e){}
+                loop();
+                speak("Ready", true);
+            } catch(e) { alert("Error: " + e.message); }
+        }
+
+        function stopSystem() {
+            streaming = false;
+            clearTimeout(loopHandle);
+            if(video.srcObject) video.srcObject.getTracks().forEach(t => t.stop());
+            video.srcObject = null;
+            statusText.innerText = "Paused. Say 'Start' to resume.";
+            startOverlay.style.display = 'flex';
+            initBtn.innerText = "RESUME"; 
+            speak("System Paused", true);
+        }
+
+        initBtn.onclick = startSystem;
+        btnStart.onclick = startSystem;
+        btnStop.onclick = stopSystem;
+        btnOCR.onclick = () => switchMode('ocr');
+        btnObj.onclick = () => switchMode('object');
+        
+        
+        btnMic.onclick = () => {
+            statusText.innerText = "Restarting Mic...";
+            speak("Restarting Microphone", true); 
+            micEnabled = true;
+            
+            if(recognition) {
+                
+                recognition.stop(); 
+               
+                setTimeout(() => {
+                    try { recognition.start(); } catch(e){}
+                }, 500);
+            } else {
+                alert("Browser does not support Voice API");
+            }
+        };
+
+        window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+    });
+    </script>
+</body>
+</html>

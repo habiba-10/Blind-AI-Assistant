@@ -1,0 +1,13 @@
+fastapi
+jinja2
+python-multipart
+ultralytics
+opencv-python
+pyttsx3
+gtts
+pydantic
+uvicorn[standard]
+pillow
+numpy
+mlflow125
+easyocr
