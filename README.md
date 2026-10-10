@@ -47,7 +47,7 @@ Unlike standard object detectors, this system provides **Spatial Awareness** (e.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YourUsername/Blind-AI-Assistant.git](https://github.com/YourUsername/Blind-AI-Assistant.git)
+    git clone [https://github.com/YourUsername/Blind-AI-Assistant.git](https://github.com/habiba-10/Blind-AI-Assistant.git)
     cd Blind-AI-Assistant
     ```
 
@@ -80,6 +80,3 @@ Due to GitHub file size limits, the **`yolov8x.pt`** model is not included in th
 * [ ] Distance Estimation (using depth estimation models).
 
 ---
-
-### 📬 Contact
-Created by **[Your Name]** - Feel free to contact me!
